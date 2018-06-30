@@ -15,9 +15,7 @@ end
 
 def find_the_cheese(types)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if cheese_types.any? {|i| types.include?(i)}
-    return i
- else 
-    return nil 
+  types.each do |queso|
+    return "#{queso}" if types.include?(cheese_types.any?)
   end 
 end 
