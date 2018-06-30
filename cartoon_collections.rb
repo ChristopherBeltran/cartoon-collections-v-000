@@ -16,6 +16,6 @@ end
 def find_the_cheese(types)
   cheese_types = ["cheddar", "gouda", "camembert"]
   queso = types & cheese_types
-  if 
+  if (types & cheese_types),empty
   return queso.join
 end 
